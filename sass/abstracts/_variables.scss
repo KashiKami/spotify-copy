@@ -1,0 +1,37 @@
+:root {
+  --color-white: #fff;
+  --color-black: #000;
+  --color-grey-dark-1: #101010;
+  --color-grey-dark-2: #1d1d1d;
+  --color-grey-light-1: #b3b3b3;
+  --color-green: #21df64;
+  --number-columns: 5;
+  --number-rows: 2;
+
+  //CARD
+  --color-background-card: #181818;
+  --color-background-card-hover: #282828;
+  --height-card: 14rem;
+  --radius-card: 0.6rem;
+
+  //RESPONSIVE
+  $bp-largest: 118.75em;
+  $bp-large: 75em;
+  $bp-medium: 55.652em;
+  $bp-short: 118.75em;
+  $bp-shortest: 118.75em;
+
+  @media only screen and (max-width: $bp-largest) {
+    --number-columns: 5;
+    --height-card: 30rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    --number-columns: 4;
+    --height-card: 14rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    --number-columns: 3;
+  }
+}

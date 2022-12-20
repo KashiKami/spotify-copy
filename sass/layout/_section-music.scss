@@ -1,0 +1,21 @@
+.section-music {
+  grid-column: center-start / center-end;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(var(--number-columns), minmax(0, 1fr));
+    grid-template-rows: 1fr;
+    grid-auto-rows: 0;
+    overflow: hidden;
+    justify-items: center;
+    column-gap: 2rem;
+  }
+}

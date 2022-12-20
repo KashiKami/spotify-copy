@@ -1,0 +1,32 @@
+.btn {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1.5rem 3.2rem;
+  border: none;
+  border-radius: 0;
+  transition: all 0.1s;
+
+  &--primary {
+    color: var(--color-black);
+    background-color: var(--color-white);
+    border-radius: 100px;
+  }
+
+  &--secondary {
+    padding: 1.8rem 0;
+    color: var(--color-grey-light-1);
+    background-color: transparent;
+
+    &:hover {
+      color: var(--color-white);
+    }
+  }
+
+  &--spaced {
+    letter-spacing: 0.12rem;
+  }
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

@@ -1,0 +1,54 @@
+.header {
+  grid-column: full-start / full-end;
+  background-color: var(--color-grey-dark-2);
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 3rem;
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: auto;
+    & > *:not(:last-child) {
+      margin-right: 2.5rem;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+
+    &::after {
+      content: "";
+      height: 2.5rem;
+      width: 1px;
+      background-color: var(--color-white);
+    }
+
+    & > * {
+      margin-right: 3rem;
+    }
+  }
+
+  &__autenthication {
+    display: flex;
+    align-items: center;
+    & > *:not(:last-child) {
+      margin-right: 3rem;
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: var(--color-white);
+  }
+}

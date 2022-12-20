@@ -1,0 +1,59 @@
+.sidebar {
+  grid-column: sidebar-start / sidebar-end;
+  grid-row: 1 / -1;
+  background-color: var(--color-grey-dark-1);
+  padding: 2.5rem;
+
+  &__list {
+    list-style: none;
+    font-size: 1.3rem;
+    position: sticky;
+    top: 2.5rem;
+    display: grid;
+    grid-template-rows: repeat(8, min-content) 1fr repeat(2, min-content);
+    height: 50vh;
+    row-gap: 1.2rem;
+    color: var(--color-grey-light-1);
+    height: 90vh;
+  }
+
+  &__copyright {
+    list-style: none;
+  }
+
+  &__separator {
+    margin-top: 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: currentColor;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s;
+
+    &:hover {
+      color: var(--color-white);
+    }
+
+    &--copyright {
+      font-size: 1rem;
+
+      &:hover {
+        text-decoration: underline;
+        color: currentColor;
+      }
+    }
+  }
+
+  &__img {
+    width: 13rem;
+  }
+
+  &__icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    margin-right: 1rem;
+    fill: currentColor;
+  }
+}
